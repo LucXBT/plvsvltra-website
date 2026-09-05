@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>PLVS VLTRA — Strategic Access in Web3</title>
+  <title>PLVS VLTRA — Web3 Strategy</title>
 
   <meta name="description"
     content="PLVS VLTRA operates across the relationships, capital and opportunities that shape Web3.">
@@ -28,6 +28,7 @@
 
       --bg: #090909;
       --bg-soft: #0c0c0c;
+      --bg-elevated: #101010;
 
       --white: #f3f3ef;
       --soft-white: #d0d0cb;
@@ -37,12 +38,12 @@
 
       --accent: #c9ff58;
 
-      --accent-soft: rgba(201,255,88,.08);
+      --accent-soft: rgba(201,255,88,.07);
       --accent-mid: rgba(201,255,88,.18);
-      --accent-border: rgba(201,255,88,.32);
+      --accent-border: rgba(201,255,88,.31);
 
       --line: rgba(255,255,255,.11);
-      --line-soft: rgba(255,255,255,.052);
+      --line-soft: rgba(255,255,255,.048);
 
       --max: 1440px;
       --pad: clamp(22px,5vw,74px);
@@ -78,6 +79,82 @@
     }
 
 
+    body::before {
+
+      content: "";
+
+      position: fixed;
+      inset: 0;
+
+      z-index: -3;
+
+      pointer-events: none;
+
+      background:
+
+        radial-gradient(
+          circle at 12% 14%,
+          rgba(201,255,88,.045),
+          transparent 25%
+        ),
+
+        radial-gradient(
+          circle at 82% 42%,
+          rgba(255,255,255,.028),
+          transparent 28%
+        ),
+
+        radial-gradient(
+          circle at 40% 86%,
+          rgba(201,255,88,.025),
+          transparent 25%
+        ),
+
+        #090909;
+
+    }
+
+
+    body::after {
+
+      content: "";
+
+      position: fixed;
+      inset: 0;
+
+      z-index: -2;
+
+      pointer-events: none;
+
+      opacity: .42;
+
+      background-image:
+
+        linear-gradient(
+          rgba(255,255,255,.018) 1px,
+          transparent 1px
+        ),
+
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,.018) 1px,
+          transparent 1px
+        );
+
+      background-size:
+        120px 120px;
+
+      mask-image:
+
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,.75),
+          rgba(0,0,0,.16)
+        );
+
+    }
+
+
     a {
       color: inherit;
       text-decoration: none;
@@ -85,8 +162,10 @@
 
 
     ::selection {
+
       background: var(--accent);
       color: #000;
+
     }
 
 
@@ -141,7 +220,12 @@
 
 
     section {
-      border-bottom: 1px solid var(--line);
+
+      position: relative;
+
+      border-bottom:
+        1px solid var(--line);
+
     }
 
 
@@ -161,12 +245,17 @@
 
       z-index: 100;
 
-      background: rgba(9,9,9,.80);
+      background:
+        rgba(9,9,9,.80);
 
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter:
+        blur(18px);
 
-      border-bottom: 1px solid var(--line);
+      -webkit-backdrop-filter:
+        blur(18px);
+
+      border-bottom:
+        1px solid var(--line);
 
     }
 
@@ -179,7 +268,8 @@
 
       margin: auto;
 
-      padding: 0 var(--pad);
+      padding:
+        0 var(--pad);
 
       display: flex;
       align-items: center;
@@ -189,7 +279,9 @@
 
     .brand {
 
-      font-family: "Manrope", sans-serif;
+      font-family:
+        "Manrope",
+        sans-serif;
 
       font-size: 16px;
       font-weight: 700;
@@ -211,7 +303,8 @@
       display: flex;
       align-items: center;
 
-      gap: clamp(18px,2.5vw,34px);
+      gap:
+        clamp(18px,2.5vw,34px);
 
     }
 
@@ -225,7 +318,8 @@
       font-size: 12px;
       font-weight: 500;
 
-      transition: color .2s ease;
+      transition:
+        color .2s ease;
 
     }
 
@@ -244,10 +338,14 @@
 
       background: var(--accent);
 
-      transform: scaleX(0);
-      transform-origin: right;
+      transform:
+        scaleX(0);
 
-      transition: transform .3s var(--ease);
+      transform-origin:
+        right;
+
+      transition:
+        transform .3s var(--ease);
 
     }
 
@@ -259,8 +357,11 @@
 
     .nav-links a:hover::after {
 
-      transform: scaleX(1);
-      transform-origin: left;
+      transform:
+        scaleX(1);
+
+      transform-origin:
+        left;
 
     }
 
@@ -270,9 +371,11 @@
       width: 1px;
       height: 22px;
 
-      margin: 0 25px;
+      margin:
+        0 25px;
 
-      background: var(--line);
+      background:
+        var(--line);
 
     }
 
@@ -282,7 +385,7 @@
       display: flex;
       align-items: center;
 
-      gap: 9px;
+      gap: 11px;
 
       color: #888;
 
@@ -297,17 +400,111 @@
     }
 
 
+    .status-indicator {
+
+      position: relative;
+
+      width: 8px;
+      height: 8px;
+
+    }
+
+
     .status-dot {
 
-      width: 7px;
-      height: 7px;
+      position: absolute;
+
+      inset: 0;
+
+      width: 8px;
+      height: 8px;
 
       border-radius: 50%;
 
-      background: var(--accent);
+      background:
+        var(--accent);
 
       box-shadow:
-        0 0 13px rgba(201,255,88,.45);
+        0 0 12px
+        rgba(201,255,88,.48);
+
+      z-index: 2;
+
+    }
+
+
+    .status-indicator::before,
+    .status-indicator::after {
+
+      content: "";
+
+      position: absolute;
+
+      left: 50%;
+      top: 50%;
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid
+        rgba(201,255,88,.55);
+
+      transform:
+        translate(-50%,-50%)
+        scale(1);
+
+      opacity: 0;
+
+      animation:
+        statusPulse
+        2.8s ease-out
+        infinite;
+
+    }
+
+
+    .status-indicator::after {
+
+      animation-delay:
+        1.4s;
+
+    }
+
+
+    @keyframes statusPulse {
+
+      0% {
+
+        transform:
+          translate(-50%,-50%)
+          scale(1);
+
+        opacity: .65;
+
+      }
+
+      75% {
+
+        transform:
+          translate(-50%,-50%)
+          scale(3.2);
+
+        opacity: 0;
+
+      }
+
+      100% {
+
+        transform:
+          translate(-50%,-50%)
+          scale(3.2);
+
+        opacity: 0;
+
+      }
 
     }
 
@@ -326,8 +523,6 @@
 
       display: flex;
       align-items: flex-end;
-
-      position: relative;
 
       overflow: hidden;
 
@@ -369,6 +564,38 @@
     }
 
 
+    .hero-grid::after {
+
+      content: "";
+
+      position: absolute;
+
+      inset:
+        15% 5% auto auto;
+
+      width: 40vw;
+      height: 40vw;
+
+      max-width: 600px;
+      max-height: 600px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid
+        rgba(255,255,255,.025);
+
+      box-shadow:
+
+        0 0 0 80px
+        rgba(255,255,255,.009),
+
+        0 0 0 160px
+        rgba(255,255,255,.006);
+
+    }
+
+
     .hero-glow {
 
       position: absolute;
@@ -384,7 +611,8 @@
       background:
         rgba(201,255,88,.065);
 
-      filter: blur(110px);
+      filter:
+        blur(110px);
 
       pointer-events: none;
 
@@ -497,7 +725,8 @@
       padding-left: 20px;
 
       border-left:
-        1px solid var(--accent-border);
+        1px solid
+        var(--accent-border);
 
     }
 
@@ -511,7 +740,6 @@
       font-size: 9px;
 
       letter-spacing: .14em;
-
       text-transform: uppercase;
 
     }
@@ -535,7 +763,15 @@
     .position {
 
       padding:
-        clamp(90px,10vw,140px) 0;
+        clamp(90px,10vw,140px)
+        0;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,.012),
+          transparent 40%
+        );
 
     }
 
@@ -587,14 +823,25 @@
 
     .network {
 
-      background: var(--bg-soft);
+      padding:
+        95px 0 105px;
 
-      padding-bottom: 85px;
+      overflow: hidden;
+
+      background:
+
+        radial-gradient(
+          circle at 84% 18%,
+          rgba(201,255,88,.035),
+          transparent 22%
+        ),
+
+        rgba(12,12,12,.82);
 
     }
 
 
-    .section-head {
+    .network-head {
 
       display: grid;
 
@@ -603,13 +850,14 @@
 
       gap: 50px;
 
-      padding:
-        90px 0 60px;
+      align-items: start;
+
+      margin-bottom: 60px;
 
     }
 
 
-    .section-head h2 {
+    .network-head h2 {
 
       margin: 0;
 
@@ -631,102 +879,218 @@
     }
 
 
-    .connect-list {
-
-      border-bottom:
-        1px solid var(--line);
-
-    }
-
-
-    .connect-row {
+    .connection-matrix {
 
       display: grid;
 
       grid-template-columns:
-        75px
-        minmax(0,1fr)
-        minmax(160px,.6fr);
-
-      align-items: center;
-
-      min-height: 94px;
+        repeat(2,minmax(0,1fr));
 
       border-top:
         1px solid var(--line);
 
-      transition:
-        padding .35s var(--ease),
-        background .35s var(--ease);
+      border-left:
+        1px solid var(--line);
 
     }
 
 
-    .connect-row:hover {
+    .connection-card {
 
-      padding-left: 15px;
-      padding-right: 15px;
+      position: relative;
+
+      min-height: 210px;
+
+      padding:
+        28px 30px;
+
+      overflow: hidden;
+
+      border-right:
+        1px solid var(--line);
+
+      border-bottom:
+        1px solid var(--line);
 
       background:
-        rgba(255,255,255,.025);
+        rgba(255,255,255,.012);
+
+      transition:
+
+        background .35s var(--ease),
+
+        border-color .35s var(--ease);
 
     }
 
 
-    .connect-num {
+    .connection-card:hover {
+
+      background:
+        rgba(255,255,255,.028);
+
+    }
+
+
+    .connection-card::after {
+
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+      height: 180px;
+
+      right: -110px;
+      bottom: -110px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid
+        rgba(201,255,88,.12);
+
+      transition:
+        transform .6s var(--ease),
+        border-color .6s var(--ease);
+
+    }
+
+
+    .connection-card:hover::after {
+
+      transform:
+        scale(1.18);
+
+      border-color:
+        rgba(201,255,88,.28);
+
+    }
+
+
+    .connection-index {
+
+      display: block;
+
+      margin-bottom: 50px;
 
       color: var(--accent);
 
-      font-size: 11px;
+      font-size: 9px;
+      font-weight: 600;
+
+      letter-spacing: .08em;
 
     }
 
 
-    .connect-source {
+    .connection-pair {
+
+      display: flex;
+      align-items: center;
+
+      gap: 18px;
 
       font-family:
         "Manrope",
         sans-serif;
 
+    }
+
+
+    .connection-from,
+    .connection-to {
+
       font-size:
-        clamp(21px,2.2vw,30px);
+        clamp(22px,2.5vw,34px);
 
-      letter-spacing: -.03em;
-
-    }
-
-
-    .connect-destination {
-
-      display: flex;
-      align-items: center;
-
-      gap: 14px;
-
-      color: #9b9b95;
-
-      font-size: 14px;
+      letter-spacing:
+        -.035em;
 
     }
 
 
-    .connect-arrow {
+    .connection-from {
+      color: var(--white);
+    }
 
-      color: var(--accent);
 
-      font-size: 18px;
+    .connection-to {
+      color: #777771;
+    }
 
-      transition:
-        transform .3s var(--ease);
+
+    .connection-line {
+
+      position: relative;
+
+      flex:
+        0 1 85px;
+
+      height: 1px;
+
+      background:
+        rgba(255,255,255,.15);
+
+      overflow: visible;
 
     }
 
 
-    .connect-row:hover
-    .connect-arrow {
+    .connection-line::after {
+
+      content: "";
+
+      position: absolute;
+
+      top: 50%;
+      left: 0;
+
+      width: 5px;
+      height: 5px;
+
+      border-radius: 50%;
+
+      background:
+        var(--accent);
+
+      box-shadow:
+        0 0 8px
+        rgba(201,255,88,.6);
 
       transform:
-        translateX(6px);
+        translateY(-50%);
+
+      opacity: .6;
+
+      transition:
+        left .65s var(--ease),
+        opacity .3s ease;
+
+    }
+
+
+    .connection-card:hover
+    .connection-line::after {
+
+      left:
+        calc(100% - 5px);
+
+      opacity: 1;
+
+    }
+
+
+    .connection-context {
+
+      margin-top: 23px;
+
+      max-width: 360px;
+
+      color: #686863;
+
+      font-size: 11px;
+      line-height: 1.55;
 
     }
 
@@ -740,7 +1104,16 @@
     .visual-section {
 
       padding:
-        clamp(70px,8vw,110px) 0;
+        clamp(70px,8vw,110px)
+        0;
+
+      background:
+
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,.008),
+          transparent
+        );
 
     }
 
@@ -787,12 +1160,15 @@
       object-fit: cover;
 
       filter:
+
         saturate(.84)
         contrast(1.05)
         brightness(.78);
 
       transition:
+
         transform 1.2s var(--ease),
+
         filter 1.2s var(--ease);
 
     }
@@ -804,6 +1180,7 @@
         scale(1.025);
 
       filter:
+
         saturate(1)
         contrast(1.05)
         brightness(.84);
@@ -830,9 +1207,7 @@
 
 
     .visual-copy {
-
       padding-bottom: 8px;
-
     }
 
 
@@ -881,9 +1256,20 @@
     .ecosystem {
 
       padding:
-        clamp(95px,10vw,145px) 0;
+        clamp(95px,10vw,145px)
+        0;
 
-      background: #080808;
+      overflow: hidden;
+
+      background:
+
+        radial-gradient(
+          circle at 50% 54%,
+          rgba(201,255,88,.028),
+          transparent 32%
+        ),
+
+        rgba(8,8,8,.9);
 
     }
 
@@ -980,7 +1366,6 @@
     .network-svg {
 
       position: absolute;
-
       inset: 0;
 
       width: 100%;
@@ -994,7 +1379,7 @@
     .network-path {
 
       stroke:
-        rgba(255,255,255,.13);
+        rgba(255,255,255,.12);
 
       stroke-width: 1;
 
@@ -1006,7 +1391,24 @@
     .network-path-primary {
 
       stroke:
-        rgba(201,255,88,.18);
+        rgba(201,255,88,.20);
+
+      stroke-dasharray:
+        5 9;
+
+      animation:
+        flowLine
+        18s linear
+        infinite;
+
+    }
+
+
+    @keyframes flowLine {
+
+      to {
+        stroke-dashoffset: -140;
+      }
 
     }
 
@@ -1031,9 +1433,6 @@
       left: 50%;
       top: 50%;
 
-      transform:
-        translate(-50%,-50%);
-
       border-radius: 50%;
 
       border:
@@ -1045,10 +1444,41 @@
     }
 
 
+    .orbit::after {
+
+      content: "";
+
+      position: absolute;
+
+      left: 50%;
+      top: -3px;
+
+      width: 5px;
+      height: 5px;
+
+      border-radius: 50%;
+
+      background:
+        rgba(201,255,88,.75);
+
+      box-shadow:
+        0 0 10px
+        rgba(201,255,88,.55);
+
+    }
+
+
     .orbit-one {
 
       width: 330px;
       height: 330px;
+
+      margin:
+        -165px 0 0 -165px;
+
+      animation:
+        rotateOrbit
+        28s linear infinite;
 
     }
 
@@ -1057,6 +1487,33 @@
 
       width: 510px;
       height: 510px;
+
+      margin:
+        -255px 0 0 -255px;
+
+      animation:
+        rotateOrbitReverse
+        44s linear infinite;
+
+    }
+
+
+    @keyframes rotateOrbit {
+
+      to {
+        transform:
+          rotate(360deg);
+      }
+
+    }
+
+
+    @keyframes rotateOrbitReverse {
+
+      to {
+        transform:
+          rotate(-360deg);
+      }
 
     }
 
@@ -1223,7 +1680,62 @@
       border-radius: 50%;
 
       background:
-        rgba(201,255,88,.7);
+        rgba(201,255,88,.8);
+
+      box-shadow:
+        0 0 0
+        rgba(201,255,88,.5);
+
+      animation:
+        nodePulse
+        3s ease-in-out
+        infinite;
+
+    }
+
+
+    .ecosystem-node:nth-of-type(2)
+    .node-indicator {
+      animation-delay: .5s;
+    }
+
+
+    .ecosystem-node:nth-of-type(3)
+    .node-indicator {
+      animation-delay: 1s;
+    }
+
+
+    .ecosystem-node:nth-of-type(4)
+    .node-indicator {
+      animation-delay: 1.5s;
+    }
+
+
+    .ecosystem-node:nth-of-type(5)
+    .node-indicator {
+      animation-delay: 2s;
+    }
+
+
+    @keyframes nodePulse {
+
+      0%,
+      100% {
+
+        box-shadow:
+          0 0 0 0
+          rgba(201,255,88,0);
+
+      }
+
+      50% {
+
+        box-shadow:
+          0 0 0 5px
+          rgba(201,255,88,.07);
+
+      }
 
     }
 
@@ -1318,6 +1830,14 @@
       padding:
         clamp(100px,10vw,145px)
         0 35px;
+
+      background:
+
+        radial-gradient(
+          circle at 75% 30%,
+          rgba(201,255,88,.025),
+          transparent 22%
+        );
 
     }
 
@@ -1443,7 +1963,7 @@
 
 
     /* ======================================================
-       ANIMATION
+       REVEAL
     ====================================================== */
 
 
@@ -1530,7 +2050,6 @@
       .hero-inner {
 
         padding-top: 120px;
-
         padding-bottom: 35px;
 
       }
@@ -1566,7 +2085,7 @@
 
 
       .position-grid,
-      .section-head,
+      .network-head,
       .contact-grid {
 
         grid-template-columns: 1fr;
@@ -1575,29 +2094,23 @@
 
 
       .position-grid,
-      .section-head {
+      .network-head {
 
         gap: 40px;
 
       }
 
 
-      .connect-row {
+      .connection-matrix {
 
-        grid-template-columns:
-          44px 1fr;
-
-        padding:
-          20px 0;
+        grid-template-columns: 1fr;
 
       }
 
 
-      .connect-destination {
+      .connection-card {
 
-        grid-column: 2;
-
-        margin-top: 7px;
+        min-height: 180px;
 
       }
 
@@ -1736,6 +2249,20 @@
       }
 
 
+      .connection-pair {
+
+        flex-wrap: wrap;
+
+      }
+
+
+      .connection-line {
+
+        flex-basis: 50px;
+
+      }
+
+
       .ecosystem-board {
 
         grid-template-columns: 1fr;
@@ -1784,9 +2311,12 @@
 
   <!-- NAV -->
 
+
   <header class="nav">
 
+
     <div class="nav-inner">
+
 
       <a
         class="brand"
@@ -1828,13 +2358,22 @@
 
       <div class="nav-status">
 
-        <span class="status-dot"></span>
+
+        <span class="status-indicator">
+
+          <span class="status-dot"></span>
+
+        </span>
+
 
         Web3
 
+
       </div>
 
+
     </div>
+
 
   </header>
 
@@ -1844,7 +2383,10 @@
 
 
 
-    <!-- HERO -->
+    <!-- ======================================================
+         HERO
+    ====================================================== -->
+
 
     <section
       class="hero"
@@ -1871,6 +2413,7 @@
         <h1 class="reveal">
 
           The right
+
           <span class="accent">
             access.
           </span>
@@ -1936,7 +2479,10 @@
 
 
 
-    <!-- POSITION -->
+    <!-- ======================================================
+         POSITION
+    ====================================================== -->
+
 
     <section class="position">
 
@@ -1973,7 +2519,10 @@
 
 
 
-    <!-- NETWORK -->
+    <!-- ======================================================
+         NETWORK
+    ====================================================== -->
+
 
     <section
       class="network"
@@ -1983,7 +2532,7 @@
       <div class="container">
 
 
-        <div class="section-head">
+        <div class="network-head">
 
 
           <div
@@ -2000,7 +2549,9 @@
             Connecting what should already
 
             <span class="accent">
+
               know each other.
+
             </span>
 
           </h2>
@@ -2010,102 +2561,162 @@
 
 
 
-        <div class="connect-list">
+        <div class="connection-matrix">
 
 
-          <div class="connect-row reveal">
+          <article class="connection-card reveal">
 
-            <div class="connect-num">
+
+            <span class="connection-index">
               01
-            </div>
+            </span>
 
-            <div class="connect-source">
-              Founders
-            </div>
 
-            <div class="connect-destination">
+            <div class="connection-pair">
 
-              <span class="connect-arrow">
-                →
+
+              <span class="connection-from">
+                Founders
               </span>
 
-              Capital
+
+              <span class="connection-line"></span>
+
+
+              <span class="connection-to">
+                Capital
+              </span>
+
 
             </div>
 
-          </div>
+
+            <p class="connection-context">
+
+              Connecting builders with the capital
+              required to move.
+
+            </p>
+
+
+          </article>
 
 
 
-          <div class="connect-row reveal">
+          <article class="connection-card reveal">
 
-            <div class="connect-num">
+
+            <span class="connection-index">
               02
-            </div>
+            </span>
 
-            <div class="connect-source">
-              Protocols
-            </div>
 
-            <div class="connect-destination">
+            <div class="connection-pair">
 
-              <span class="connect-arrow">
-                →
+
+              <span class="connection-from">
+                Protocols
               </span>
 
-              Liquidity
+
+              <span class="connection-line"></span>
+
+
+              <span class="connection-to">
+                Liquidity
+              </span>
+
 
             </div>
 
-          </div>
+
+            <p class="connection-context">
+
+              Bringing protocols closer to
+              relevant sources of liquidity.
+
+            </p>
+
+
+          </article>
 
 
 
-          <div class="connect-row reveal">
+          <article class="connection-card reveal">
 
-            <div class="connect-num">
+
+            <span class="connection-index">
               03
-            </div>
+            </span>
 
-            <div class="connect-source">
-              Newcomers
-            </div>
 
-            <div class="connect-destination">
+            <div class="connection-pair">
 
-              <span class="connect-arrow">
-                →
+
+              <span class="connection-from">
+                Newcomers
               </span>
 
-              Mentors
+
+              <span class="connection-line"></span>
+
+
+              <span class="connection-to">
+                Mentors
+              </span>
+
 
             </div>
 
-          </div>
+
+            <p class="connection-context">
+
+              Shortening the distance between
+              entry and experience.
+
+            </p>
+
+
+          </article>
 
 
 
-          <div class="connect-row reveal">
+          <article class="connection-card reveal">
 
-            <div class="connect-num">
+
+            <span class="connection-index">
               04
-            </div>
+            </span>
 
-            <div class="connect-source">
-              Ambition
-            </div>
 
-            <div class="connect-destination">
+            <div class="connection-pair">
 
-              <span class="connect-arrow">
-                →
+
+              <span class="connection-from">
+                Ambition
               </span>
 
-              Opportunity
+
+              <span class="connection-line"></span>
+
+
+              <span class="connection-to">
+                Opportunity
+              </span>
+
 
             </div>
 
-          </div>
+
+            <p class="connection-context">
+
+              Turning the right introduction
+              into forward motion.
+
+            </p>
+
+
+          </article>
 
 
         </div>
@@ -2118,7 +2729,10 @@
 
 
 
-    <!-- IMAGE -->
+    <!-- ======================================================
+         IMAGE
+    ====================================================== -->
+
 
     <section class="visual-section">
 
@@ -2128,6 +2742,7 @@
 
         <figure class="visual-image reveal">
 
+
           <img
 
             src="https://images.unsplash.com/photo-1553954004-bfd9c929f040?auto=format&fit=crop&w=1800&q=85"
@@ -2136,7 +2751,9 @@
 
             loading="lazy">
 
+
         </figure>
+
 
 
         <div class="visual-copy reveal">
@@ -2154,8 +2771,7 @@
           <h3>
 
             Being in the ecosystem
-            isn't the same
-            as being
+            isn't the same as being
 
             <span class="accent">
               connected.
@@ -2166,11 +2782,9 @@
 
           <p>
 
-            The value of a network
-            is not how many names it contains.
-
-            It is knowing which connection matters,
-            when it matters.
+            The value of a network is not how many
+            names it contains, but knowing which
+            connection matters and when it matters.
 
           </p>
 
@@ -2185,7 +2799,10 @@
 
 
 
-    <!-- ECOSYSTEM -->
+    <!-- ======================================================
+         ECOSYSTEM
+    ====================================================== -->
+
 
     <section
       class="ecosystem"
@@ -2267,7 +2884,7 @@
 
             <path
               id="path3"
-              class="network-path"
+              class="network-path network-path-primary"
               d="M500 330 L860 105" />
 
 
@@ -2324,7 +2941,24 @@
 
               <animateMotion
                 dur="7s"
-                begin="1.2s"
+                begin=".8s"
+                repeatCount="indefinite">
+
+                <mpath href="#path3"/>
+
+              </animateMotion>
+
+            </circle>
+
+
+
+            <circle
+              class="signal"
+              r="3">
+
+              <animateMotion
+                dur="6s"
+                begin="1.5s"
                 repeatCount="indefinite">
 
                 <mpath href="#path5"/>
@@ -2340,8 +2974,8 @@
               r="3">
 
               <animateMotion
-                dur="6s"
-                begin="2s"
+                dur="6.5s"
+                begin="2.2s"
                 repeatCount="indefinite">
 
                 <mpath href="#path7"/>
@@ -2398,8 +3032,10 @@
 
 
             <p>
+
               Funds, family offices
               and capital providers.
+
             </p>
 
 
@@ -2428,8 +3064,10 @@
 
 
             <p>
+
               Builders across infrastructure,
               protocols and applications.
+
             </p>
 
 
@@ -2458,8 +3096,10 @@
 
 
             <p>
+
               Networks, DeFi primitives
               and ecosystem organizations.
+
             </p>
 
 
@@ -2488,8 +3128,10 @@
 
 
             <p>
+
               Centralized and decentralized
               markets.
+
             </p>
 
 
@@ -2518,8 +3160,10 @@
 
 
             <p>
+
               Publications and voices
               that shape the conversation.
+
             </p>
 
 
@@ -2548,8 +3192,10 @@
 
 
             <p>
+
               Platforms spanning
               first principles to protocol design.
+
             </p>
 
 
@@ -2578,8 +3224,10 @@
 
 
             <p>
+
               Auditors and specialists
               securing digital infrastructure.
+
             </p>
 
 
@@ -2608,8 +3256,10 @@
 
 
             <p>
+
               Organizations supporting
               early-stage builders.
+
             </p>
 
 
@@ -2626,7 +3276,10 @@
 
 
 
-    <!-- CONTACT -->
+    <!-- ======================================================
+         CONTACT
+    ====================================================== -->
+
 
     <section
       class="contact"
@@ -2673,9 +3326,7 @@
 
 
             <a
-
               class="contact-link reveal"
-
               href="mailto:hello@plvsvltra.net">
 
 
