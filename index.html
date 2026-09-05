@@ -28,7 +28,6 @@
 
       --bg: #090909;
       --bg-soft: #0c0c0c;
-      --panel: #101010;
 
       --white: #f3f3ef;
       --soft-white: #d0d0cb;
@@ -46,7 +45,7 @@
       --line-soft: rgba(255,255,255,.052);
 
       --max: 1440px;
-      --pad: clamp(22px, 5vw, 74px);
+      --pad: clamp(22px,5vw,74px);
 
       --ease: cubic-bezier(.22,.61,.36,1);
 
@@ -536,7 +535,7 @@
     .position {
 
       padding:
-        clamp(90px,10vw,145px) 0;
+        clamp(90px,10vw,140px) 0;
 
     }
 
@@ -553,27 +552,22 @@
     }
 
 
-    .position-content {
-
-      max-width: 920px;
-
-    }
-
-
     .position-title {
 
       margin: 0;
+
+      max-width: 880px;
 
       font-family:
         "Manrope",
         sans-serif;
 
       font-size:
-        clamp(31px,4vw,52px);
+        clamp(33px,4vw,52px);
 
       line-height: 1.1;
 
-      letter-spacing: -.042em;
+      letter-spacing: -.043em;
 
       font-weight: 500;
 
@@ -582,30 +576,6 @@
 
     .position-title span {
       color: #64645f;
-    }
-
-
-    .position-copy {
-
-      max-width: 720px;
-
-      margin-top: 34px;
-
-      color: #8d8d87;
-
-      font-size: 15px;
-
-      line-height: 1.75;
-
-    }
-
-
-    .position-copy strong {
-
-      color: #d4d4ce;
-
-      font-weight: 500;
-
     }
 
 
@@ -643,7 +613,7 @@
 
       margin: 0;
 
-      max-width: 760px;
+      max-width: 780px;
 
       font-family:
         "Manrope",
@@ -969,7 +939,6 @@
     }
 
 
-
     .ecosystem-board {
 
       position: relative;
@@ -1006,7 +975,6 @@
         56px 56px;
 
     }
-
 
 
     .network-svg {
@@ -1180,7 +1148,6 @@
     }
 
 
-
     .ecosystem-node {
 
       position: absolute;
@@ -1337,113 +1304,6 @@
     .node-8 {
       right: 6%;
       bottom: 8%;
-    }
-
-
-
-    /* ======================================================
-       STATEMENT
-    ====================================================== */
-
-
-    .statement {
-
-      padding:
-        clamp(110px,12vw,175px) 0;
-
-      position: relative;
-
-      overflow: hidden;
-
-    }
-
-
-    .statement-grid {
-
-      display: grid;
-
-      grid-template-columns:
-        1fr 3fr;
-
-      gap: 50px;
-
-      position: relative;
-
-      z-index: 2;
-
-    }
-
-
-    .statement-content {
-
-      max-width: 900px;
-
-    }
-
-
-    .statement-content h2 {
-
-      margin: 0;
-
-      font-family:
-        "Manrope",
-        sans-serif;
-
-      font-size:
-        clamp(34px,4.2vw,55px);
-
-      line-height: 1.09;
-
-      letter-spacing: -.044em;
-
-      font-weight: 500;
-
-    }
-
-
-    .statement-content h2 span {
-      color: #61615d;
-    }
-
-
-    .statement-follow {
-
-      margin-top: 32px;
-
-      color: var(--accent);
-
-      font-size: 13px;
-
-      letter-spacing: .01em;
-
-    }
-
-
-    .statement-bg {
-
-      position: absolute;
-
-      right: -30px;
-      bottom: -80px;
-
-      color:
-        rgba(255,255,255,.018);
-
-      font-family:
-        "Manrope",
-        sans-serif;
-
-      font-size:
-        clamp(120px,20vw,285px);
-
-      font-weight: 700;
-
-      letter-spacing: -.09em;
-
-      white-space: nowrap;
-
-      pointer-events: none;
-
     }
 
 
@@ -1707,7 +1567,6 @@
 
       .position-grid,
       .section-head,
-      .statement-grid,
       .contact-grid {
 
         grid-template-columns: 1fr;
@@ -1716,8 +1575,7 @@
 
 
       .position-grid,
-      .section-head,
-      .statement-grid {
+      .section-head {
 
         gap: 40px;
 
@@ -1926,7 +1784,6 @@
 
   <!-- NAV -->
 
-
   <header class="nav">
 
     <div class="nav-inner">
@@ -1988,7 +1845,6 @@
 
 
     <!-- HERO -->
-
 
     <section
       class="hero"
@@ -2082,7 +1938,6 @@
 
     <!-- POSITION -->
 
-
     <section class="position">
 
 
@@ -2098,42 +1953,17 @@
         </div>
 
 
-        <div class="position-content">
+        <h2 class="position-title reveal">
 
+          In a permissionless industry,
 
-          <h2 class="position-title reveal">
+          <span>
 
-            A declaration to push past
-            the known edges of the world.
+            access is still everything.
 
-            <span>
+          </span>
 
-              In the digital frontier,
-              those edges are drawn
-              by access.
-
-            </span>
-
-          </h2>
-
-
-          <p class="position-copy reveal">
-
-            First step into the ecosystem
-            or eight-figure close,
-            the work is the same:
-
-            <strong>
-
-              putting you in the room
-              where it happens.
-
-            </strong>
-
-          </p>
-
-
-        </div>
+        </h2>
 
 
       </div>
@@ -2144,7 +1974,6 @@
 
 
     <!-- NETWORK -->
-
 
     <section
       class="network"
@@ -2291,7 +2120,6 @@
 
     <!-- IMAGE -->
 
-
     <section class="visual-section">
 
 
@@ -2358,7 +2186,6 @@
 
 
     <!-- ECOSYSTEM -->
-
 
     <section
       class="ecosystem"
@@ -2799,67 +2626,7 @@
 
 
 
-    <!-- STATEMENT -->
-
-
-    <section class="statement">
-
-
-      <div class="container statement-grid">
-
-
-        <div
-          class="eyebrow reveal"
-          data-index="05">
-
-          Philosophy
-
-        </div>
-
-
-        <div class="statement-content">
-
-
-          <h2 class="reveal">
-
-            Ambition doesn't fail
-            from lack of vision.
-
-            <span>
-
-              It fails from lack
-              of the right introduction.
-
-            </span>
-
-          </h2>
-
-
-          <div class="statement-follow reveal">
-
-            We don't wait for serendipity.
-            We engineer it.
-
-          </div>
-
-
-        </div>
-
-
-      </div>
-
-
-      <div class="statement-bg">
-        PLVS
-      </div>
-
-
-    </section>
-
-
-
     <!-- CONTACT -->
-
 
     <section
       class="contact"
@@ -2874,7 +2641,7 @@
 
           <div
             class="eyebrow reveal"
-            data-index="06">
+            data-index="05">
 
             Contact
 
