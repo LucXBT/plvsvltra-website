@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>PLVS VLTRA — The bridge to what lies further beyond</title>
-<meta name="description" content="PLVS VLTRA LLC connects founders with capital, protocols with liquidity, newcomers with mentors, and ambition with opportunity across the Web3 ecosystem.">
+<title>PLVS VLTRA</title>
+<meta name="description" content="Plvs Vltra connects founders with capital, protocols with liquidity, newcomers with mentors, and ambition with opportunity.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://plvsvltra.net/">
@@ -13,23 +13,23 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PLVS VLTRA">
-<meta property="og:title" content="PLVS VLTRA — The bridge to what lies further beyond">
-<meta property="og:description" content="PLVS VLTRA LLC connects founders with capital, protocols with liquidity, newcomers with mentors, and ambition with opportunity across the Web3 ecosystem.">
+<meta property="og:title" content="PLVS VLTRA">
+<meta property="og:description" content="Plvs Vltra connects founders with capital, protocols with liquidity, newcomers with mentors, and ambition with opportunity.">
 <meta property="og:url" content="https://plvsvltra.net/">
 <meta property="og:locale" content="en_US">
-<!-- When you have a share image (1200x630), upload it to the repo and uncomment the next line:
+<!-- When you have a share image (1200x630), upload it to the repo and uncomment:
 <meta property="og:image" content="https://plvsvltra.net/og.jpg"> -->
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="PLVS VLTRA — The bridge to what lies further beyond">
-<meta name="twitter:description" content="PLVS VLTRA LLC connects founders with capital, protocols with liquidity, newcomers with mentors, and ambition with opportunity across the Web3 ecosystem.">
+<meta name="twitter:title" content="PLVS VLTRA">
+<meta name="twitter:description" content="Plvs Vltra connects founders with capital, protocols with liquidity, newcomers with mentors, and ambition with opportunity.">
 
-<!-- Temporary favicon. Replace with favicon.ico or favicon.svg in your repo when ready. -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000000'/><text x='50' y='67' font-family='Georgia,serif' font-size='46' fill='%23ffffff' text-anchor='middle'>PV</text></svg>">
+<!-- Temporary favicon. Replace with your own file when ready. -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000000'/><text x='50' y='68' font-family='Georgia,serif' font-size='44' fill='%23ffffff' text-anchor='middle'>PV</text></svg>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 
 <style>
 /* ============================================================
@@ -38,20 +38,18 @@
 :root{
   --black:#000000;
   --paper:#F2F1EE;
-  --stone-200:#DDDBD5;
   --stone-400:#A5A29A;
   --stone-600:#66635C;
   --stone-800:#2A2926;
-  --white:#FFFFFF;
 
-  --rule-dark:rgba(255,255,255,.18);
-  --rule-light:rgba(0,0,0,.16);
+  --rule-dark:rgba(255,255,255,.16);
+  --rule-light:rgba(0,0,0,.14);
 
   --serif:"Cormorant Garamond", Georgia, "Times New Roman", serif;
   --sans:"Archivo", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 
-  --gutter:clamp(1.25rem, 5vw, 5.5rem);
-  --maxw:1560px;
+  --gutter:clamp(1.25rem, 5vw, 5rem);
+  --maxw:1440px;
 
   --ease:cubic-bezier(.22,.61,.36,1);
 }
@@ -66,126 +64,81 @@ body{
   background:var(--black);
   color:var(--paper);
   font-family:var(--sans);
-  font-size:clamp(.95rem,.9rem + .2vw,1.0625rem);
-  line-height:1.65;
-  font-weight:400;
+  font-size:clamp(.925rem,.89rem + .18vw,1.0125rem);
+  line-height:1.62;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   overflow-x:hidden;
 }
-img{max-width:100%;display:block;}
 a{color:inherit;text-decoration:none;}
 button,input,textarea{font:inherit;color:inherit;}
-h1,h2,h3,p,figure,blockquote{margin:0;}
-ul,ol{margin:0;padding:0;list-style:none;}
+h1,h2,h3,p,figure,blockquote,dl,dd{margin:0;}
+ul{margin:0;padding:0;list-style:none;}
 ::selection{background:var(--paper);color:var(--black);}
-
-:focus-visible{
-  outline:1px solid currentColor;
-  outline-offset:4px;
-}
+:focus-visible{outline:1px solid currentColor;outline-offset:4px;}
 
 .visually-hidden{
   position:absolute;width:1px;height:1px;margin:-1px;padding:0;
   overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
 }
-
 .skip-link{
-  position:absolute;top:0;left:0;z-index:100;
-  transform:translateY(-120%);
-  background:var(--paper);color:var(--black);
-  padding:.75rem 1.25rem;font-size:.8rem;letter-spacing:.08em;
+  position:absolute;top:0;left:0;z-index:100;transform:translateY(-120%);
+  background:var(--paper);color:var(--black);padding:.75rem 1.25rem;
+  font-size:.78rem;letter-spacing:.08em;
 }
 .skip-link:focus{transform:translateY(0);}
 
 /* ============================================================
-   3. TYPOGRAPHY
+   3. LAYOUT PRIMITIVES
    ============================================================ */
-.display{
-  font-family:var(--serif);
-  font-weight:300;
-  line-height:.95;
-  letter-spacing:-.015em;
-}
-.section-title{
-  font-family:var(--serif);
-  font-weight:300;
-  font-size:clamp(2.25rem,1.4rem + 3.6vw,4.75rem);
-  line-height:1.02;
-  letter-spacing:-.015em;
-}
-.lede{
-  font-family:var(--serif);
-  font-weight:300;
-  font-size:clamp(1.35rem,1.05rem + 1.4vw,2.15rem);
-  line-height:1.34;
-  letter-spacing:-.005em;
-  max-width:22ch;
-}
-.prose p{
-  max-width:64ch;
-  color:var(--stone-600);
-  font-size:clamp(1rem,.95rem + .3vw,1.1875rem);
-  line-height:1.72;
-}
-.prose p + p{margin-top:1.5em;}
-.meta{
-  font-size:.7rem;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  font-weight:500;
-  color:var(--stone-400);
-}
-
-/* ============================================================
-   4. LAYOUT
-   ============================================================ */
-.shell{
-  width:100%;
-  max-width:var(--maxw);
-  margin-inline:auto;
-  padding-inline:var(--gutter);
-}
-section{position:relative;}
-.band{padding-block:clamp(5rem,3rem + 10vw,11rem);}
+.shell{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter);}
+.band{padding-block:clamp(4rem,2.2rem + 7vw,8rem);}
 .band--paper{background:var(--paper);color:var(--stone-800);}
 .band--black{background:var(--black);color:var(--paper);}
+.band--slim{padding-block:clamp(3.25rem,2rem + 4.5vw,5.5rem);}
 
-.rule{
-  height:1px;width:100%;border:0;margin:0;
-  background:var(--rule-light);
-  transform:scaleX(0);
-  transform-origin:left center;
-  transition:transform 1.1s var(--ease);
+.split{
+  display:grid;
+  grid-template-columns:minmax(0,4fr) minmax(0,8fr);
+  gap:clamp(2rem,4vw,5rem);
+  align-items:start;
 }
-.band--black .rule,.hero .rule{background:var(--rule-dark);}
-.rule.is-in{transform:scaleX(1);}
+@media (max-width:880px){
+  .split{grid-template-columns:minmax(0,1fr);gap:2rem;}
+}
+
+.link-rule{
+  display:inline-flex;align-items:center;gap:.85rem;
+  font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:500;white-space:nowrap;
+}
+.link-rule i{
+  display:block;width:clamp(28px,4.5vw,54px);height:1px;
+  background:currentColor;transition:width .5s var(--ease);
+}
+.link-rule:hover i,.link-rule:focus-visible i{width:clamp(46px,7vw,82px);}
 
 /* ============================================================
-   5. NAV
+   4. NAV
    ============================================================ */
 .nav{
-  position:fixed;inset:0 0 auto 0;z-index:50;
-  transition:background .5s var(--ease),color .5s var(--ease),border-color .5s var(--ease);
+  position:fixed;inset:0 0 auto 0;z-index:50;color:var(--paper);
   border-bottom:1px solid transparent;
-  color:var(--paper);
+  transition:background .5s var(--ease),color .5s var(--ease),border-color .5s var(--ease);
 }
 .nav__inner{
-  display:flex;align-items:center;justify-content:space-between;
-  gap:1rem;
-  height:clamp(64px,5.5vw,88px);
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  height:clamp(60px,5vw,80px);
 }
 .nav__brand{
-  font-family:var(--serif);
-  font-size:clamp(1rem,.9rem + .35vw,1.3rem);
-  letter-spacing:.24em;
-  font-weight:400;
-  white-space:nowrap;
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(.95rem,.88rem + .3vw,1.2rem);
+  letter-spacing:.26em;white-space:nowrap;
 }
-.nav__links{display:flex;align-items:center;gap:clamp(1.25rem,3vw,2.75rem);}
+.nav__links{display:flex;align-items:center;gap:clamp(1.35rem,3vw,2.5rem);}
 .nav__link{
-  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
-  position:relative;padding-block:.35rem;
+  position:relative;padding-block:.3rem;
+  font-size:.685rem;letter-spacing:.15em;text-transform:uppercase;font-weight:500;
 }
 .nav__link::after{
   content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;
@@ -193,329 +146,234 @@ section{position:relative;}
   transition:transform .45s var(--ease);
 }
 .nav__link:hover::after,.nav__link:focus-visible::after{transform:scaleX(1);transform-origin:left center;}
-.nav__cta{
-  border:1px solid currentColor;
-  padding:.6rem 1.15rem;
-  font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
-  transition:background .4s var(--ease),color .4s var(--ease);
-}
-.nav__cta:hover,.nav__cta:focus-visible{background:currentColor;}
-.nav__cta:hover span,.nav__cta:focus-visible span{mix-blend-mode:difference;filter:invert(1);}
-.nav.is-solid{
-  background:var(--paper);color:var(--stone-800);
-  border-bottom-color:var(--rule-light);
-}
-@media (max-width:640px){
-  .nav__links{gap:1rem;}
-  .nav__link--ecosystem{display:none;}
-  .nav__cta{padding:.5rem .8rem;font-size:.62rem;}
-  .nav__link{font-size:.65rem;}
-}
+.nav.is-solid{background:var(--paper);color:var(--stone-800);border-bottom-color:var(--rule-light);}
 
 /* ============================================================
-   6. HERO
+   5. HERO
    ============================================================ */
 .hero{
   min-height:100svh;
   display:flex;flex-direction:column;justify-content:flex-end;
-  padding-top:clamp(96px,14vh,180px);
-  padding-bottom:clamp(1.25rem,3vw,2.5rem);
+  padding-top:clamp(90px,13vh,170px);
+  padding-bottom:clamp(1.1rem,2.5vw,2.25rem);
   overflow:hidden;
 }
 .hero__body{
-  flex:1;
-  display:flex;flex-direction:column;justify-content:center;
-  gap:clamp(2.5rem,6vw,5rem);
+  flex:1;display:flex;flex-direction:column;justify-content:center;
+  gap:clamp(2.25rem,5vw,4rem);
 }
 .hero__headline{
-  font-size:clamp(2.9rem,1.2rem + 8.4vw,10rem);
+  font-family:var(--serif);font-weight:300;
+  font-size:clamp(2.75rem,1.1rem + 8vw,9rem);
+  line-height:.96;letter-spacing:-.018em;
 }
-.hero__line{
-  display:block;
-  overflow:hidden;
-}
-.hero__line span{
-  display:block;
-  transform:translateY(105%);
-  transition:transform 1.25s var(--ease);
-}
-.hero__line--second span{transition-delay:.13s;}
-.hero__line--second{font-style:italic;color:var(--stone-400);}
+.hero__line{display:block;overflow:hidden;}
+.hero__line span{display:block;transform:translateY(105%);transition:transform 1.2s var(--ease);}
+.hero__line--b{font-style:italic;color:var(--stone-400);}
+.hero__line--b span{transition-delay:.12s;}
 .is-ready .hero__line span{transform:translateY(0);}
 
 .hero__foot{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) auto;
-  align-items:end;
-  gap:2rem;
+  display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;
+  gap:1.25rem 2rem;
+  opacity:0;transition:opacity 1s var(--ease) .55s;
 }
-.hero__meta{
-  display:flex;flex-direction:column;gap:.15rem;
-  opacity:0;transition:opacity 1s var(--ease) .6s;
+.is-ready .hero__foot{opacity:1;}
+.hero__sub{
+  font-family:var(--serif);font-style:italic;font-weight:300;
+  font-size:clamp(1.05rem,.95rem + .7vw,1.5rem);
+  color:var(--stone-400);max-width:26ch;
 }
-.is-ready .hero__meta{opacity:1;}
-.hero__enter{
-  display:inline-flex;align-items:center;gap:.9rem;
-  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;
-  opacity:0;transition:opacity 1s var(--ease) .7s;
-  white-space:nowrap;
-}
-.is-ready .hero__enter{opacity:1;}
-.hero__enter i{
-  display:block;width:clamp(28px,5vw,64px);height:1px;background:currentColor;
-  transition:width .5s var(--ease);
-}
-.hero__enter:hover i,.hero__enter:focus-visible i{width:clamp(48px,8vw,96px);}
 
-.hero__rule{margin-block:clamp(1.5rem,3vw,2.5rem) clamp(1.1rem,2vw,1.75rem);transition-delay:.35s;}
+.hero__rule{
+  height:1px;width:100%;border:0;background:var(--rule-dark);
+  margin-block:clamp(1.35rem,2.5vw,2.25rem) clamp(1rem,1.8vw,1.5rem);
+  transform:scaleX(0);transform-origin:left center;
+  transition:transform 1.2s var(--ease) .3s;
+}
+.is-ready .hero__rule{transform:scaleX(1);}
 
-/* brand band — the signature device */
 .brandband{
-  display:flex;align-items:baseline;
-  width:100%;
-  font-family:var(--serif);
-  font-weight:300;
-  font-size:clamp(2rem,.5rem + 7.2vw,8.5rem);
-  line-height:.9;
-  color:var(--paper);
+  display:flex;align-items:baseline;width:100%;
+  font-family:var(--serif);font-weight:300;
+  font-size:clamp(1.9rem,.4rem + 7vw,8rem);
+  line-height:.9;color:var(--paper);
 }
 .brandband b{
   display:block;font-weight:inherit;
-  transform:translateY(30%);opacity:0;
+  transform:translateY(28%);opacity:0;
   transition:transform 1s var(--ease),opacity 1s var(--ease);
 }
 .is-ready .brandband b{transform:translateY(0);opacity:1;}
-.brandband i{display:block;flex:1 1 auto;min-width:.4ch;}
-.brandband .gap{flex:0 0 clamp(.6rem,3vw,3.5rem);}
+.brandband i{display:block;flex:1 1 auto;min-width:.35ch;}
+.brandband .gap{flex:0 0 clamp(.55rem,2.8vw,3.25rem);}
 
 /* ============================================================
-   7. POSITIONING
+   6. POSITION + PAIRS
    ============================================================ */
-.grid-split{
-  display:grid;
-  grid-template-columns:minmax(0,5fr) minmax(0,7fr);
-  gap:clamp(2.25rem,5vw,6rem);
-  align-items:start;
-}
-@media (max-width:900px){
-  .grid-split{grid-template-columns:minmax(0,1fr);gap:2.25rem;}
-}
-.definition{
-  border-top:1px solid var(--rule-light);
-  padding-top:1.5rem;
-}
+.definition{border-top:1px solid var(--rule-light);padding-top:1.35rem;}
 .definition dt{
-  font-family:var(--serif);
-  font-size:clamp(1.9rem,1.3rem + 2.2vw,3.25rem);
-  font-weight:400;
-  line-height:1.05;
-  letter-spacing:.02em;
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.75rem,1.25rem + 2vw,3rem);
+  line-height:1.04;letter-spacing:.02em;
 }
 .definition dd{
-  margin:.55rem 0 0;
-  font-family:var(--serif);
-  font-style:italic;
-  font-size:clamp(1.05rem,.95rem + .7vw,1.5rem);
+  margin-top:.45rem;
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(1rem,.92rem + .6vw,1.35rem);
   color:var(--stone-600);
 }
+.prose p{
+  max-width:58ch;color:var(--stone-600);
+  font-size:clamp(1rem,.94rem + .3vw,1.15rem);
+  line-height:1.7;
+}
+.prose p + p{margin-top:1.35em;}
 
-/* ============================================================
-   8. CONNECT PAIRS
-   ============================================================ */
-.pairs{margin-top:clamp(2.5rem,5vw,4.5rem);}
+.pairs{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 clamp(2rem,5vw,5rem);
+  margin-top:clamp(2.5rem,5vw,4rem);
+}
+@media (max-width:680px){.pairs{grid-template-columns:minmax(0,1fr);}}
 .pair{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(2rem,1.1fr) minmax(0,1fr);
-  align-items:center;
-  gap:clamp(.75rem,2vw,2rem);
-  padding-block:clamp(1.05rem,2.2vw,1.9rem);
+  display:flex;align-items:baseline;gap:clamp(.6rem,1.5vw,1.25rem);
+  padding-block:clamp(.85rem,1.6vw,1.25rem);
   border-top:1px solid var(--rule-light);
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.2rem,.95rem + 1.1vw,1.85rem);
+  line-height:1.15;
 }
-.pair:last-of-type{border-bottom:1px solid var(--rule-light);}
-.pair span{
-  font-family:var(--serif);
-  font-size:clamp(1.4rem,1rem + 2vw,3rem);
-  font-weight:400;
-  line-height:1.1;
-}
-.pair span:last-child{text-align:right;font-style:italic;color:var(--stone-600);}
 .pair i{
-  display:block;height:1px;background:var(--stone-400);
+  flex:1 1 auto;min-width:1.5rem;height:1px;background:var(--stone-400);
   transform:scaleX(0);transform-origin:left center;
-  transition:transform 1s var(--ease);
+  transition:transform .9s var(--ease);
 }
 .pair.is-in i{transform:scaleX(1);}
+.pair em{font-style:italic;color:var(--stone-600);white-space:nowrap;}
 .pairs__close{
-  margin-top:clamp(1.5rem,3vw,2.5rem);
+  margin-top:clamp(1.35rem,2.5vw,2rem);
+  border-top:1px solid var(--rule-light);padding-top:1.35rem;
   font-family:var(--serif);font-style:italic;
-  font-size:clamp(1.1rem,1rem + .8vw,1.65rem);
-  color:var(--stone-600);
+  font-size:clamp(1.05rem,.95rem + .7vw,1.5rem);color:var(--stone-600);
 }
 
 /* ============================================================
-   9. STATEMENT
+   7. STATEMENT
    ============================================================ */
-.statement{text-align:left;max-width:26ch;}
+.statement{
+  max-width:36ch;margin-inline:auto;text-align:center;
+}
 .statement blockquote{
   font-family:var(--serif);font-weight:300;
-  font-size:clamp(1.75rem,1.1rem + 3vw,4rem);
-  line-height:1.12;letter-spacing:-.01em;
-  text-indent:-.42em;
+  font-size:clamp(1.45rem,1.05rem + 1.9vw,2.6rem);
+  line-height:1.2;letter-spacing:-.008em;
 }
-.statement__engine{
-  margin-top:clamp(2rem,4vw,3.25rem);
-  font-family:var(--serif);font-style:italic;font-weight:300;
-  font-size:clamp(1.15rem,1rem + 1vw,1.9rem);
-  color:var(--stone-400);
-  max-width:30ch;
+.statement figcaption{
+  margin-top:clamp(1.5rem,3vw,2.25rem);
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(1rem,.92rem + .55vw,1.3rem);color:var(--stone-400);
 }
 
 /* ============================================================
-   10. NETWORK DIRECTORY
+   8. NETWORK
    ============================================================ */
-.directory{margin-top:clamp(2.5rem,5vw,4.5rem);border-top:1px solid var(--rule-light);}
-.directory li{border-bottom:1px solid var(--rule-light);}
+.network__head{
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:.75rem 2rem;
+}
+.h2{
+  font-family:var(--serif);font-weight:300;
+  font-size:clamp(2rem,1.35rem + 2.8vw,3.75rem);
+  line-height:1.04;letter-spacing:-.015em;
+}
+.directory{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 clamp(2rem,5vw,5rem);
+  margin-top:clamp(2.25rem,4vw,3.5rem);
+}
+@media (max-width:760px){.directory{grid-template-columns:minmax(0,1fr);}}
 .entry{
-  position:relative;
-  display:grid;
-  grid-template-columns:minmax(0,5fr) minmax(0,7fr);
-  gap:clamp(.35rem,3vw,4rem);
-  align-items:baseline;
-  padding:clamp(1.1rem,2.2vw,1.85rem) clamp(0rem,1.5vw,1.5rem);
-  transition:color .45s var(--ease),padding-left .45s var(--ease);
+  border-top:1px solid var(--rule-light);
+  padding-block:clamp(1rem,1.8vw,1.45rem);
+  transition:border-color .4s var(--ease);
 }
-.entry::before{
-  content:"";position:absolute;inset:0;background:var(--black);
-  transform:scaleY(0);transform-origin:bottom center;
-  transition:transform .45s var(--ease);
-  z-index:0;
-}
-.entry > *{position:relative;z-index:1;}
 .entry h3{
   font-family:var(--serif);font-weight:400;
-  font-size:clamp(1.45rem,1.1rem + 1.8vw,2.75rem);
-  line-height:1.1;
+  font-size:clamp(1.2rem,1rem + .9vw,1.7rem);line-height:1.15;
+  transition:transform .45s var(--ease);
 }
 .entry p{
-  color:var(--stone-600);
-  font-size:clamp(.9rem,.86rem + .25vw,1.0625rem);
-  max-width:46ch;
-  transition:color .45s var(--ease);
+  margin-top:.3rem;color:var(--stone-600);
+  font-size:clamp(.85rem,.82rem + .18vw,.95rem);line-height:1.55;max-width:40ch;
+  transition:color .4s var(--ease);
 }
 @media (hover:hover){
-  .entry:hover{color:var(--paper);padding-left:clamp(.75rem,2.5vw,2.5rem);}
-  .entry:hover::before{transform:scaleY(1);transform-origin:top center;}
-  .entry:hover p{color:var(--stone-400);}
-}
-@media (max-width:760px){
-  .entry{grid-template-columns:minmax(0,1fr);gap:.45rem;}
+  .entry:hover{border-top-color:var(--stone-800);}
+  .entry:hover h3{transform:translateX(.35rem);}
+  .entry:hover p{color:var(--stone-800);}
 }
 
 /* ============================================================
-   11. CONTACT
+   9. CLOSING: CONTACT + FOOTER
    ============================================================ */
-.form{margin-top:clamp(2.25rem,4vw,3.5rem);max-width:44rem;}
-.field{position:relative;padding-top:1.9rem;margin-bottom:clamp(1.5rem,3vw,2.25rem);}
+.form{margin-top:clamp(1.75rem,3vw,2.5rem);max-width:38rem;}
+.field{position:relative;padding-top:1.75rem;margin-bottom:clamp(1.35rem,2.5vw,1.9rem);}
 .field label{
   position:absolute;top:0;left:0;
-  font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;
-  color:var(--stone-400);
-  transition:color .35s var(--ease);
+  font-size:.655rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;
+  color:var(--stone-400);transition:color .35s var(--ease);
 }
 .field input,.field textarea{
-  width:100%;
-  background:transparent;
-  border:0;border-bottom:1px solid var(--rule-dark);
-  padding:.35rem 0 .85rem;
-  font-family:var(--serif);
-  font-size:clamp(1.15rem,1rem + .9vw,1.75rem);
-  font-weight:300;
-  color:var(--paper);
-  border-radius:0;
-  transition:border-color .35s var(--ease);
-  resize:vertical;
+  width:100%;background:transparent;border:0;border-bottom:1px solid var(--rule-dark);
+  padding:.3rem 0 .75rem;border-radius:0;resize:vertical;
+  font-family:var(--serif);font-weight:300;
+  font-size:clamp(1.1rem,.98rem + .8vw,1.6rem);
+  color:var(--paper);transition:border-color .35s var(--ease);
 }
-.field textarea{line-height:1.4;min-height:4.5rem;}
+.field textarea{line-height:1.4;min-height:4rem;}
 .field input:focus,.field textarea:focus{outline:none;border-bottom-color:var(--paper);}
 .field:focus-within label{color:var(--paper);}
 .field input::placeholder,.field textarea::placeholder{color:var(--stone-600);opacity:1;}
 
 .submit{
-  display:inline-flex;align-items:center;gap:1rem;
-  background:transparent;border:1px solid var(--rule-dark);
-  padding:1rem 1.9rem;
-  font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;
-  cursor:pointer;
-  transition:background .4s var(--ease),color .4s var(--ease),border-color .4s var(--ease);
+  background:transparent;border:0;border-bottom:1px solid currentColor;
+  padding:0 0 .55rem;cursor:pointer;
+  display:inline-flex;align-items:center;gap:.85rem;
+  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;
+  transition:color .4s var(--ease),border-color .4s var(--ease);
 }
-.submit:hover,.submit:focus-visible{background:var(--paper);color:var(--black);border-color:var(--paper);}
-.form__status{
-  margin-top:1.25rem;min-height:1.4rem;
-  font-size:.85rem;color:var(--stone-400);
+.submit i{display:block;width:34px;height:1px;background:currentColor;transition:width .5s var(--ease);}
+.submit:hover i,.submit:focus-visible i{width:60px;}
+.submit:hover,.submit:focus-visible{color:#fff;}
+.form__status{margin-top:1.1rem;min-height:1.3rem;font-size:.82rem;color:var(--stone-400);}
+
+.colophon{
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:.6rem 2rem;
+  margin-top:clamp(3.5rem,7vw,6rem);
+  padding-top:1.35rem;border-top:1px solid var(--rule-dark);
+  font-size:.68rem;letter-spacing:.06em;color:var(--stone-600);
+}
+.colophon a:hover,.colophon a:focus-visible{color:var(--paper);}
+.colophon__mark{
+  font-family:var(--serif);font-size:.92rem;letter-spacing:.24em;color:var(--stone-400);
 }
 
 /* ============================================================
-   12. FOOTER
+   10. REVEALS
    ============================================================ */
-.footer{padding-bottom:clamp(1.5rem,3vw,2.5rem);}
-.footer__top{
-  display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-  gap:clamp(2rem,5vw,4rem);
-  align-items:end;
-  padding-block:clamp(3rem,6vw,5.5rem) clamp(2.5rem,5vw,4rem);
-}
-@media (max-width:760px){
-  .footer__top{grid-template-columns:minmax(0,1fr);align-items:start;}
-}
-.footer__tag{
-  font-family:var(--serif);font-style:italic;font-weight:300;
-  font-size:clamp(1.35rem,1.1rem + 1.4vw,2.5rem);
-  line-height:1.2;max-width:18ch;
-}
-.footer__connect h2{
-  font-family:var(--serif);font-weight:400;
-  font-size:clamp(1.35rem,1.1rem + 1.4vw,2.5rem);
-  line-height:1.2;
-}
-.footer__connect p{margin-top:.5rem;color:var(--stone-400);max-width:34ch;}
-.footer__apply{
-  display:inline-flex;align-items:center;gap:.9rem;margin-top:1.5rem;
-  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;
-}
-.footer__apply i{display:block;width:40px;height:1px;background:currentColor;transition:width .5s var(--ease);}
-.footer__apply:hover i,.footer__apply:focus-visible i{width:68px;}
-
-.footer__legal{
-  display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem 2rem;
-  padding-top:1.5rem;
-  border-top:1px solid var(--rule-dark);
-  font-size:.72rem;letter-spacing:.06em;color:var(--stone-600);
-}
-.footer__legal a:hover,.footer__legal a:focus-visible{color:var(--paper);}
-.footer__legal address{font-style:normal;}
-
-/* ============================================================
-   13. REVEALS
-   ============================================================ */
-[data-reveal]{
-  opacity:0;transform:translateY(14px);
-  transition:opacity 1s var(--ease),transform 1s var(--ease);
-}
+[data-reveal]{opacity:0;transform:translateY(12px);transition:opacity .95s var(--ease),transform .95s var(--ease);}
 [data-reveal].is-in{opacity:1;transform:none;}
-[data-delay="1"]{transition-delay:.09s;}
-[data-delay="2"]{transition-delay:.18s;}
-[data-delay="3"]{transition-delay:.27s;}
+[data-delay="1"]{transition-delay:.1s;}
+[data-delay="2"]{transition-delay:.2s;}
 
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto;}
-  *,*::before,*::after{
-    animation-duration:.01ms !important;animation-iteration-count:1 !important;
-    transition-duration:.01ms !important;
-  }
-  [data-reveal],.hero__meta,.hero__enter,.brandband b{opacity:1;transform:none;}
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important;}
+  [data-reveal],.hero__foot,.brandband b{opacity:1;transform:none;}
   .hero__line span{transform:none;}
-  .rule,.pair i{transform:scaleX(1);}
+  .hero__rule,.pair i{transform:scaleX(1);}
 }
 </style>
 </head>
@@ -525,11 +383,10 @@ section{position:relative;}
 
 <header class="nav" id="nav">
   <div class="shell nav__inner">
-    <a class="nav__brand" href="#top" aria-label="PLVS VLTRA, home">PLVS VLTRA</a>
+    <a class="nav__brand" href="#top" aria-label="Plvs Vltra, home">PLVS VLTRA</a>
     <nav class="nav__links" aria-label="Primary">
-      <a class="nav__link nav__link--ecosystem" href="#network">Ecosystem</a>
+      <a class="nav__link" href="#network">Ecosystem</a>
       <a class="nav__link" href="#contact">Contact</a>
-      <a class="nav__cta" href="#contact"><span>Enter the network</span></a>
     </nav>
   </div>
 </header>
@@ -539,20 +396,18 @@ section{position:relative;}
   <!-- ============ HERO ============ -->
   <section class="hero shell" id="top">
     <div class="hero__body">
-      <h1 class="display hero__headline">
-        <span class="hero__line"><span>We Build the Bridges.</span></span>
-        <span class="hero__line hero__line--second"><span>You Go Further Beyond.</span></span>
+      <h1 class="hero__headline">
+        <span class="hero__line"><span>We build the bridges.</span></span>
+        <span class="hero__line hero__line--b"><span>You go further beyond.</span></span>
       </h1>
 
       <div class="hero__foot">
-        <p class="meta hero__meta">
-          PLVS VLTRA LLC<br>Wyoming, United States
-        </p>
-        <a class="hero__enter" href="#contact"><i aria-hidden="true"></i>Enter the network</a>
+        <p class="hero__sub">Introductions that move capital, protocols and people.</p>
+        <a class="link-rule" href="#contact"><i aria-hidden="true"></i>Enter the network</a>
       </div>
     </div>
 
-    <hr class="rule hero__rule" data-rule>
+    <hr class="hero__rule">
 
     <div class="brandband" role="img" aria-label="PLVS VLTRA">
       <b aria-hidden="true">P</b><i aria-hidden="true"></i>
@@ -568,12 +423,13 @@ section{position:relative;}
     </div>
   </section>
 
-  <!-- ============ POSITIONING ============ -->
+  <!-- ============ POSITION + WHAT WE CONNECT ============ -->
   <section class="band band--paper" id="about" aria-labelledby="about-title">
     <div class="shell">
-      <div class="grid-split">
+      <h2 class="visually-hidden" id="about-title">What Plvs Vltra does</h2>
+
+      <div class="split">
         <div data-reveal>
-          <h2 class="visually-hidden" id="about-title">About PLVS VLTRA</h2>
           <dl class="definition">
             <dt>Plvs Vltra</dt>
             <dd>Further beyond</dd>
@@ -582,22 +438,15 @@ section{position:relative;}
 
         <div class="prose" data-reveal data-delay="1">
           <p>A declaration to push past the known edges of the world. In the digital frontier, those edges are not drawn by geography. They are drawn by access.</p>
-          <p>Whether you're taking your first steps into the ecosystem or closing your next eight-figure deal, Plvs Vltra exists to put you in the room where it happens.</p>
+          <p>First step into the ecosystem or eight-figure close, the work is the same: putting you in the room where it happens.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ WHAT WE CONNECT ============ -->
-  <section class="band band--paper" style="padding-top:0" aria-labelledby="connect-title">
-    <div class="shell">
-      <h2 class="section-title" id="connect-title" data-reveal>We connect</h2>
 
       <div class="pairs">
-        <div class="pair" data-pair><span>Founders</span><i aria-hidden="true"></i><span>with capital</span></div>
-        <div class="pair" data-pair><span>Protocols</span><i aria-hidden="true"></i><span>with liquidity</span></div>
-        <div class="pair" data-pair><span>Newcomers</span><i aria-hidden="true"></i><span>with mentors</span></div>
-        <div class="pair" data-pair><span>Ambition</span><i aria-hidden="true"></i><span>with opportunity</span></div>
+        <div class="pair" data-pair><span>Founders</span><i aria-hidden="true"></i><em>capital</em></div>
+        <div class="pair" data-pair><span>Protocols</span><i aria-hidden="true"></i><em>liquidity</em></div>
+        <div class="pair" data-pair><span>Newcomers</span><i aria-hidden="true"></i><em>mentors</em></div>
+        <div class="pair" data-pair><span>Ambition</span><i aria-hidden="true"></i><em>opportunity</em></div>
       </div>
 
       <p class="pairs__close" data-reveal>At every level, without exception.</p>
@@ -605,42 +454,45 @@ section{position:relative;}
   </section>
 
   <!-- ============ STATEMENT ============ -->
-  <section class="band band--black" aria-label="Our position">
+  <section class="band band--black band--slim" aria-label="Our position">
     <div class="shell">
       <figure class="statement" data-reveal>
-        <blockquote>&ldquo;Ambition doesn't fail from lack of vision. It fails from lack of the right introduction.&rdquo;</blockquote>
+        <blockquote>Ambition doesn't fail from lack of vision. It fails from lack of the right introduction.</blockquote>
+        <figcaption>We don't wait for serendipity. We engineer it.</figcaption>
       </figure>
-      <p class="statement__engine" data-reveal data-delay="1">We don't wait for serendipity. We engineer it.</p>
     </div>
   </section>
 
   <!-- ============ NETWORK ============ -->
   <section class="band band--paper" id="network" aria-labelledby="network-title">
     <div class="shell">
-      <h2 class="section-title" id="network-title" data-reveal>Who we connect</h2>
+      <div class="network__head" data-reveal>
+        <h2 class="h2" id="network-title">Who we connect</h2>
+      </div>
 
       <ul class="directory">
-        <li><article class="entry"><h3>Venture Capital</h3><p>Tier 1 funds, family offices and sovereign wealth.</p></article></li>
-        <li><article class="entry"><h3>Founders &amp; Devs</h3><p>Builders shipping infrastructure, ZK proofs and consumer dApps.</p></article></li>
-        <li><article class="entry"><h3>Protocols &amp; DAOs</h3><p>L1/L2 networks, DeFi primitives and governance structures.</p></article></li>
-        <li><article class="entry"><h3>Exchanges</h3><p>Tier 1 CEXs and leading DEXs.</p></article></li>
-        <li><article class="entry"><h3>Educational Platforms</h3><p>From blockchain basics to advanced protocol design, covering every level.</p></article></li>
-        <li><article class="entry"><h3>Media &amp; PR</h3><p>Top-tier crypto publications and key opinion leaders.</p></article></li>
-        <li><article class="entry"><h3>Auditors</h3><p>Security firms securing smart contracts.</p></article></li>
-        <li><article class="entry"><h3>Accelerators</h3><p>Incubators providing the spark for early-stage projects.</p></article></li>
+        <li class="entry"><h3>Venture capital</h3><p>Tier 1 funds, family offices and sovereign wealth.</p></li>
+        <li class="entry"><h3>Founders and developers</h3><p>Builders shipping infrastructure, ZK proofs and consumer dApps.</p></li>
+        <li class="entry"><h3>Protocols and DAOs</h3><p>L1 and L2 networks, DeFi primitives and governance structures.</p></li>
+        <li class="entry"><h3>Exchanges</h3><p>Tier 1 centralised venues and leading decentralised markets.</p></li>
+        <li class="entry"><h3>Education</h3><p>Platforms covering every level, from first principles to protocol design.</p></li>
+        <li class="entry"><h3>Media and PR</h3><p>Top-tier publications and the voices that set the agenda.</p></li>
+        <li class="entry"><h3>Auditors</h3><p>Security firms that harden smart contracts before they ship.</p></li>
+        <li class="entry"><h3>Accelerators</h3><p>Incubators that give early-stage projects their first push.</p></li>
       </ul>
     </div>
   </section>
 
-  <!-- ============ CONTACT ============ -->
+  <!-- ============ CONTACT + COLOPHON ============ -->
   <section class="band band--black" id="contact" aria-labelledby="contact-title">
     <div class="shell">
-      <div class="grid-split">
+      <div class="split">
         <div data-reveal>
-          <h2 class="section-title" id="contact-title">Join the network</h2>
+          <h2 class="h2" id="contact-title">Join the network</h2>
         </div>
+
         <div data-reveal data-delay="1">
-          <p class="lede">Plvs Vltra operates on a curated basis. Tell us who you are and what you need.</p>
+          <p class="hero__sub">Access is curated. Tell us who you are and what you need.</p>
 
           <form class="form" id="signal-form" novalidate>
             <div class="field">
@@ -655,49 +507,21 @@ section{position:relative;}
               <label for="f-need">What do you need?</label>
               <textarea id="f-need" name="need" rows="3" required placeholder="A short outline"></textarea>
             </div>
-            <button class="submit" type="submit">Send signal</button>
+            <button class="submit" type="submit"><i aria-hidden="true"></i>Send signal</button>
             <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
+      </div>
+
+      <div class="colophon">
+        <span class="colophon__mark">PLVS VLTRA</span>
+        <span>&copy; <span id="year">2026</span> Plvs Vltra. All rights reserved.</span>
+        <a href="#top">Privacy</a>
       </div>
     </div>
   </section>
 
 </main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="footer band--black">
-  <div class="shell">
-    <div class="footer__top">
-      <p class="footer__tag" data-reveal>The bridge to what lies further beyond.</p>
-
-      <div class="footer__connect" data-reveal data-delay="1">
-        <h2>Connect</h2>
-        <p>Submit your project for consideration.</p>
-        <a class="footer__apply" href="#contact"><i aria-hidden="true"></i>Apply now</a>
-      </div>
-    </div>
-
-    <div class="brandband" role="img" aria-label="PLVS VLTRA" style="margin-bottom:clamp(2rem,4vw,3.5rem)">
-      <b aria-hidden="true">P</b><i aria-hidden="true"></i>
-      <b aria-hidden="true">L</b><i aria-hidden="true"></i>
-      <b aria-hidden="true">V</b><i aria-hidden="true"></i>
-      <b aria-hidden="true">S</b>
-      <i class="gap" aria-hidden="true"></i>
-      <b aria-hidden="true">V</b><i aria-hidden="true"></i>
-      <b aria-hidden="true">L</b><i aria-hidden="true"></i>
-      <b aria-hidden="true">T</b><i aria-hidden="true"></i>
-      <b aria-hidden="true">R</b><i aria-hidden="true"></i>
-      <b aria-hidden="true">A</b>
-    </div>
-
-    <div class="footer__legal">
-      <address>PLVS VLTRA LLC, Wyoming, United States</address>
-      <span>&copy; <span id="year">2026</span> Plvs Vltra. All rights reserved.</span>
-      <a href="#top">Privacy</a>
-    </div>
-  </div>
-</footer>
 
 <script>
 (function () {
@@ -712,21 +536,20 @@ section{position:relative;}
 
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* ---- page load sequence ---- */
+  /* page-load sequence */
   requestAnimationFrame(function () {
     document.body.classList.add("is-ready");
   });
 
-  /* ---- brand band letters: stagger ---- */
+  /* wordmark letters, staggered */
   document.querySelectorAll(".brandband").forEach(function (band) {
-    var letters = band.querySelectorAll("b");
-    letters.forEach(function (el, i) {
-      el.style.transitionDelay = (0.35 + i * 0.045) + "s";
+    band.querySelectorAll("b").forEach(function (el, i) {
+      el.style.transitionDelay = (0.3 + i * 0.04) + "s";
     });
   });
 
-  /* ---- scroll reveals ---- */
-  var targets = document.querySelectorAll("[data-reveal], [data-rule], [data-pair]");
+  /* scroll reveals */
+  var targets = document.querySelectorAll("[data-reveal], [data-pair]");
 
   if (!("IntersectionObserver" in window) || reduce) {
     targets.forEach(function (el) { el.classList.add("is-in"); });
@@ -737,36 +560,28 @@ section{position:relative;}
         entry.target.classList.add("is-in");
         io.unobserve(entry.target);
       });
-    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.1 });
+    }, { rootMargin: "0px 0px -12% 0px", threshold: 0.12 });
 
     targets.forEach(function (el) { io.observe(el); });
 
-    /* pairs draw one after another */
     document.querySelectorAll("[data-pair]").forEach(function (el, i) {
-      el.querySelector("i").style.transitionDelay = (i * 0.1) + "s";
+      el.querySelector("i").style.transitionDelay = (i * 0.08) + "s";
     });
   }
 
-  /* the hero rule sits above the fold: draw it with the load sequence */
-  var heroRule = document.querySelector(".hero__rule");
-  if (heroRule) {
-    setTimeout(function () { heroRule.classList.add("is-in"); }, 200);
-  }
-
-  /* ---- nav state ---- */
+  /* nav state */
   var nav = document.getElementById("nav");
   var hero = document.getElementById("top");
 
   if (nav && hero && "IntersectionObserver" in window) {
-    var navObserver = new IntersectionObserver(function (entries) {
+    new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         nav.classList.toggle("is-solid", !entry.isIntersecting);
       });
-    }, { rootMargin: "-72px 0px 0px 0px", threshold: 0 });
-    navObserver.observe(hero);
+    }, { rootMargin: "-68px 0px 0px 0px", threshold: 0 }).observe(hero);
   }
 
-  /* ---- form ---- */
+  /* form */
   var form = document.getElementById("signal-form");
   var status = document.getElementById("form-status");
 
@@ -784,13 +599,11 @@ section{position:relative;}
         return;
       }
 
-      var body =
-        "Name: " + name + "\n" +
-        "Contact: " + contact + "\n\n" +
-        "What they need:\n" + need;
+      var body = "Name: " + name + "\n" +
+                 "Contact: " + contact + "\n\n" +
+                 "What they need:\n" + need;
 
-      window.location.href =
-        "mailto:" + CONTACT_EMAIL +
+      window.location.href = "mailto:" + CONTACT_EMAIL +
         "?subject=" + encodeURIComponent("Signal from " + name) +
         "&body=" + encodeURIComponent(body);
 
@@ -799,7 +612,7 @@ section{position:relative;}
     });
   }
 
-  /* ---- current year ---- */
+  /* current year */
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 })();
