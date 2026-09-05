@@ -551,14 +551,14 @@
     }
 
     .hero-copy {
-      max-width: 610px;
+      max-width: 690px;
 
-      color: #b1b1ab;
+      color: #a9a9a3;
 
       font-size:
         clamp(16px,1.3vw,19px);
 
-      line-height: 1.6;
+      line-height: 1.65;
 
       letter-spacing: -.015em;
     }
@@ -581,8 +581,7 @@
       padding-left: 20px;
 
       border-left:
-        1px solid
-        var(--accent-border);
+        1px solid var(--accent-border);
     }
 
     .micro-label {
@@ -1615,9 +1614,6 @@
         display: none;
       }
 
-
-      /* HERO */
-
       .hero {
         min-height: 88vh;
 
@@ -1650,9 +1646,6 @@
         width: auto;
       }
 
-
-      /* LAYOUT */
-
       .position-grid,
       .network-head,
       .contact-grid {
@@ -1663,9 +1656,6 @@
       .network-head {
         gap: 40px;
       }
-
-
-      /* NETWORK MOBILE */
 
       .connection-matrix {
         grid-template-columns: 1fr;
@@ -1703,9 +1693,6 @@
         margin-top: 18px;
       }
 
-
-      /* IMAGE */
-
       .visual-layout {
         grid-template-columns: 1fr;
       }
@@ -1718,9 +1705,6 @@
         padding:
           15px 0 10px;
       }
-
-
-      /* ECOSYSTEM MOBILE */
 
       .ecosystem-header {
         grid-template-columns: 1fr;
@@ -1993,7 +1977,6 @@
         margin-bottom: 7px;
       }
 
-
       footer {
         flex-direction: column;
 
@@ -2186,13 +2169,14 @@
 
           <div class="hero-copy">
 
-            A strategic network built around
-            one simple principle:
+            From your first steps in Web3
+            to your next major deal,
 
             <strong>
 
-              the right introduction changes
-              what is possible.
+              PLVS VLTRA connects you with the people
+              and opportunities that matter — and puts
+              you in the room where it happens.
 
             </strong>
 
@@ -2937,10 +2921,6 @@
       ).matches;
 
 
-    /* -----------------------------------------
-       GENERAL REVEALS
-    ----------------------------------------- */
-
     const observer =
       new IntersectionObserver(
 
@@ -2984,10 +2964,6 @@
         el => observer.observe(el)
       );
 
-
-    /* -----------------------------------------
-       MOBILE NETWORK ANIMATION
-    ----------------------------------------- */
 
     const networkMatrix =
       document.getElementById(
@@ -3171,10 +3147,6 @@
 
     }
 
-
-    /* -----------------------------------------
-       YEAR
-    ----------------------------------------- */
 
     document
       .getElementById("year")
